@@ -9,6 +9,7 @@
   1. 创建项目入口文件， 重写启动事件，配置插件
   
    ```java
+   
    @WebServlet(name="Application", urlPatterns="/*")
 public class Application extends REST2JEngine {
 	private static final long serialVersionUID = 3098992381506693800L;
@@ -20,11 +21,13 @@ public class Application extends REST2JEngine {
 		setViewProvider(new ViewProviderImp());
 	}
 }
+
    ```
    
-  2. 发布资源服务
+  2. 发布资源服务  
   
      ```java
+     
 @Register
 public class UserAction {
 	@Inject
@@ -45,6 +48,7 @@ public class UserAction {
 		ModelAndView modelAndView = new ModelAndView("user/list.html", model);
 		return Response.build(modelAndView, MediaType.TEXT_HTML);
 	}
+	
    ```
    
   
