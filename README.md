@@ -7,6 +7,7 @@
   
 ## 使用
   1. 创建项目入口文件， 重写启动事件，配置插件
+  
    ```java
    @WebServlet(name="Application", urlPatterns="/*")
 public class Application extends REST2JEngine {
@@ -20,7 +21,9 @@ public class Application extends REST2JEngine {
 	}
 }
    ```
+   
   2. 发布资源服务
+  
      ```java
 @Register
 public class UserAction {
@@ -43,5 +46,6 @@ public class UserAction {
 		return Response.build(modelAndView, MediaType.TEXT_HTML);
 	}
    ```
+   
   
   
