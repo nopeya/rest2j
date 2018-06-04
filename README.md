@@ -22,10 +22,10 @@ public class Application extends REST2JEngine {
 }
    ```
    
-  2. 发布资源服务  
+  2. 发布资源服务
   
-     ```java
-@Register
+  ```java
+  @Register
 public class UserAction {
 	@Inject
 	private UserService service;
@@ -45,8 +45,5 @@ public class UserAction {
 		ModelAndView modelAndView = new ModelAndView("user/list.html", model);
 		return Response.build(modelAndView, MediaType.TEXT_HTML);
 	}
-}	
-   ```
-   
-  
-  
+}
+  ```
