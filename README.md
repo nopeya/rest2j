@@ -45,6 +45,7 @@ public class UserAction {
 		ModelAndView modelAndView = new ModelAndView("user/list.html", model);
 		return Response.build(modelAndView, MediaType.TEXT_HTML);
 	}
+}	
    ```
    
   
