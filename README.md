@@ -25,7 +25,7 @@
   2. 发布资源服务
   
   ```java
-	  @Register
+	@Register
 	@Path("/book")
 	public class BookModule {
 
