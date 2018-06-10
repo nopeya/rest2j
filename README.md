@@ -1,5 +1,5 @@
 # rest2j
-  rest2j是一个简易的服务发布框架，核心目标是方便地构建REST API。
+  rest2j是一个简易的服务发布框架，核心目标是使用注解方便地构建REST API。
   
 ## 使用准备
   1. 将rest2j-x-x.jar文件拷贝到项目WebRoot/WEB-INF/lib目录下  
